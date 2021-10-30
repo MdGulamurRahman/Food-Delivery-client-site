@@ -13,13 +13,13 @@ const Populars = () => {
     },[])
 
     return ( 
-        <div className="overflow-hidden pt-5">
-            <h1 className="text-light fw-bold text-center py-5">POPULAR <span className="all-clr">FAST FOODS</span></h1>
+        <div className="pt-5 overflow-hidden">
+            <h1 className="py-5 text-center text-light fw-bold"style={{fontSize: "50px"}}>POPULAR <span className="all-clr">FAST FOODS</span></h1>
             <div className="container pt-2">
             <Row xs={1} md={3} className="g-4">
                 {
                     products.map(pd => 
-                        <Zoom>
+                 <Zoom>
              <CardGroup>
                 <Card className="work-card">
                     <Card.Img className="p-img" src={pd.img} />
@@ -34,8 +34,8 @@ const Populars = () => {
                     </Card.Text>
                     </Card.Body>
                     <Card.Text>
-                    <Button className="btn btn-danger ms-2 mb-5">Add To Cart</Button>
-                    <Link to={`/details/${pd._id}`}><Button className="btn btn-dark d-btn mb-5">Details</Button></Link>
+                    <Button className="mb-5 btn btn-danger ms-2">Add To Cart</Button>
+                    <Link to={`/details/${pd._id}`}><Button className="mb-5 btn btn-dark d-btn">Details</Button></Link>
                     </Card.Text>
                 </Card>
             </CardGroup>

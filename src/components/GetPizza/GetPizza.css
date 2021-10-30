@@ -1,0 +1,39 @@
+.pizza-area{
+    height: 100vh;
+    background: url('../../images/b1.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+.pizza-text{
+    color: #282932;
+}
+.all-text h1{
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: 800;
+    margin-left: 20px;
+}
+.pizza-btn{
+    background-color: #282932;
+    padding: 28px 88px;
+    border-radius: 55px;
+    border: 0px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 28px;
+    color: white;
+}
+.pizza-btn:hover{
+    background-color: #f7b614;
+    color: #282932;
+    transition: 1s;
+}
+@media only screen and (max-width: 668px){
+    .pizza-img{
+        width: 500px;
+        margin-top: 50px;
+    }
+    .pizza-area{
+        overflow-x: hidden;
+    }
+
+}

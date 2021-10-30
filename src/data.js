@@ -45,6 +45,24 @@ const data = [
 ]
 
 
+const ceo = [
+    {
+        img: "https://i.ibb.co/KqWNWNp/c1.jpg",
+        name: "Robb Haagelan",
+        ceo: "CEO"
+    },
+    {
+        img: "",
+        name: "Julia R. Howard",
+        ceo: "CEO"
+    },
+    {
+        img: "",
+        name: "Vicenzo Paguini",
+        ceo: "CEO"
+    },
+]
+
 
 
 

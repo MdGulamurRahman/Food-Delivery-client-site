@@ -6,6 +6,8 @@ import Bounce from 'react-reveal/Bounce';
 import Pulse from 'react-reveal/Pulse';
 import Convence from '../Convence/Convence';
 import Cafes from '../Cafes/Cafes';
+import Ceo from '../Ceo/Ceo.js';
+import GetPizza from '../GetPizza/GetPizza';
 const Home = () => {
     return (
         <>
@@ -29,6 +31,8 @@ const Home = () => {
         <Populars></Populars>
         <Convence></Convence>
         <Cafes></Cafes>
+        <Ceo></Ceo>
+        <GetPizza></GetPizza>
         </>
     );
 };
