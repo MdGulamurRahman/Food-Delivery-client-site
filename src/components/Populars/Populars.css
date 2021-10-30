@@ -1,0 +1,22 @@
+.work-card:hover{
+    box-shadow: 3px 3px 20px rgb(0, 1, 2);
+}
+.work-card{
+    background-color: rgba(180, 237, 255, 0.349);
+    border-radius: 0px 0px 50px 0px;
+    border: 0px;
+    height: 600px;
+}
+.p-img{
+    height: 300px;
+    width: 600px;
+}
+.d-btn{
+    margin-left: 100px;
+}
+.add-btn{
+   margin-right: 50px;
+}
+.all-clr{
+    color: #f7b614;
+}

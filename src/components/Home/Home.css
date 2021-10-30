@@ -1,0 +1,50 @@
+.banner{
+   background-color: #252729;
+   padding-top: 50px ;
+}
+.delivery-text{
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: 800;
+    color: #f7b614;
+}
+.express{
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: 800;
+    color: #fff;
+}
+.b-img{
+    width:900px;
+}
+.text-area h1, p{
+    margin-left: 25px;
+}
+.read-btn{
+    background-color: #f7b614;
+    padding: 28px 88px;
+    border-radius: 55px;
+    border: 0px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 28px;
+}
+.read-btn:hover{
+    background-color: #fff;
+    transition: 1s;
+}
+
+/* the area of media query */
+@media only screen and (max-width: 668px){
+    .b-img{
+        width:420px;
+        margin-top: 40px;
+    }
+    .text-area h1, p{
+        margin-left: 14px;
+    }
+    .read-btn{
+        margin-left: 20px;
+    }
+    
+}

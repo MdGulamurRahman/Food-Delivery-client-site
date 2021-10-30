@@ -1,0 +1,42 @@
+.con-area{
+    padding-top: 100px;
+}
+.text-area{
+    padding-right: 100px;
+}
+.con-img{
+    width: 550px;
+}
+.con-text{
+    font-size: 60px;
+    font-weight: 800;
+}
+.second-clr{
+    color: rgb(158, 2, 36);
+}
+.con-btn{
+    padding: 28px 88px;
+    background-color: #f7b614;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 0px;
+    transition: 1s;
+}
+.con-btn:hover{
+    background-color: rgb(193, 237, 255);
+}
+
+@media only screen and (max-width: 668px){
+    .con-img{
+        width: 400px;
+    }
+    .con-area{
+        padding-top: 60px;
+    }
+    /* .all-con-text h1,h5,h6{
+        margin-right: 200px;
+    }
+    .con-text{
+        margin-right: 0px;
+    } */
+}
