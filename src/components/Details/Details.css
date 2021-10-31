@@ -1,0 +1,50 @@
+.contact{
+    background-color: #010103;
+    border-bottom: 1px solid rgb(87, 87, 87);
+}
+.contact-btn{
+    padding: 15px 40px;
+    background-color:#f7b614 ;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-left: 300px;
+    border: 0px;
+    font-weight: 700;
+}
+
+.contact-btn:hover{
+    background-color: rgb(212, 241, 255);
+    color: rgb(0, 0, 0);
+}
+.input-icon{
+    border: 1px solid rgb(87, 87, 87);
+    padding-top: 6px;
+}
+.bg-input{
+    background-color: #010103;
+    border: 0;
+    padding-bottom: 6px;
+}
+
+.form-details{
+    margin-left: 90px;
+}
+
+
+@media only screen and (max-width: 688px){
+    .map-area{
+       overflow-x: hidden;
+       width: 400px;
+    }
+    .contact-btn{
+        margin-left: 120px;
+    }
+    .form-area{
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 992px){
+     .contact-btn{
+        margin-left: 120px;
+    }
+}

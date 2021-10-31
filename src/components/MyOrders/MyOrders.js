@@ -12,7 +12,7 @@ const MyOrders = () => {
 
     useEffect(()=>{
         setLoading(true)
-        fetch('http://localhost:5000/myOrders')
+        fetch('https://howling-scarecrow-84354.herokuapp.com/myOrders')
         .then(res => res.json())
         .then(result => {
            setMyOrders(result)
@@ -20,7 +20,7 @@ const MyOrders = () => {
         })
     },[myOrders])
     return (
-        <div className="my-order">
+        <div className="overflow-hidden my-order">
             <h1 className="text-center">GET YOUR ORDERS</h1>
             <Row xs={1} md={4} className="g-4">
             {

@@ -20,6 +20,9 @@
 .text-area h1, p{
     margin-left: 25px;
 }
+.text-area {
+    padding-right: -100px;
+}
 .read-btn{
     background-color: #f7b614;
     padding: 28px 88px;

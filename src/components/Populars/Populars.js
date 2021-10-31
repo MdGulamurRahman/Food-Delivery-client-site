@@ -7,7 +7,7 @@ import Zoom from 'react-reveal/Zoom';
 const Populars = () => {
     const [products, setProducts] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000/allProducts")
+        fetch("https://howling-scarecrow-84354.herokuapp.com/allProducts")
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
@@ -24,13 +24,10 @@ const Populars = () => {
                 <Card className="work-card">
                     <Card.Img className="p-img" src={pd.img} />
                     <Card.Body>
-                    <Card.Text className="ps-4">
-                        {pd.star}
-                    </Card.Text>
                     <Card.Title className="text-success fw-bold ps-4"><h4>{pd.name}</h4></Card.Title>
-                    <Card.Title className="ps-4">Price: {pd?.price}</Card.Title>
+                    <Card.Title className="ps-4">Price: ${pd?.price}</Card.Title>
                     <Card.Text >
-                    {pd.details.slice(0,120)}
+                    {pd.details?.slice(0,120)}
                     </Card.Text>
                     </Card.Body>
                     <Card.Text>

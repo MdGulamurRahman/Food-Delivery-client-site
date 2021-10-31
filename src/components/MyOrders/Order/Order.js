@@ -2,12 +2,12 @@ import React from 'react';
 import { Button, Card, CardGroup } from 'react-bootstrap';
 
 const Order = (props) => {
-    const {name, number, email, address, _id} = props.order;
-    const {img} = props.order.product;
+    const {number, email, address, _id} = props.order;
+    const {img,name} = props.order.product;
     const handleOrderDelete = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/deleteOrder/${id}`
+            const url = `https://howling-scarecrow-84354.herokuapp.com/deleteOrder/${id}`
             fetch(url, {
                 method: "DELETE"
             })
@@ -26,11 +26,11 @@ const Order = (props) => {
             <Card>
                 <Card.Img height="300px" variant="top" src={img} />
                 <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text>
+                <Card.Title className="text-center text-success">{name}</Card.Title>
+                <Card.Text className="text-center text-dark">
                   {number}
                 </Card.Text>
-                <Card.Text>
+                <Card.Text className="text-center text-dark">
                   {email}
                 </Card.Text>
                 <Card.Text>

@@ -1,0 +1,61 @@
+.login-area{
+    background-image: url('../../images/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.login-container{
+    padding:50px ;
+}
+.login-card{
+    background-color: rgba(73, 124, 145, 0.432);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 4px rgb(163, 213, 255);
+}
+.login-btn{
+    margin-left: 480px;
+    background-color: #f7b614;
+    padding: 8px ;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.login-btn:hover{
+    background-color: rgb(1, 22, 31);
+    color: #fff;
+}
+.google-area{
+    margin-left: 534px;
+}
+.g-btn{
+    background-color:rgb(168, 230, 255) ;
+    border: 0px;
+    border-radius: 0px 30px 0px 0px;
+}
+.g-btn:hover{
+    background-color: rgb(172, 236, 255);
+}
+
+@media only screen and (max-width: 668px){
+    .login-area{
+        background-position: center;
+    }
+    .login-btn{
+        margin-left: 96px;
+        width: 10px;
+    }
+    .google-area{
+        margin-left: 60px;
+    }
+}
+@media only screen and (min-width: 669px) and (max-width:1024px){
+    .login-btn{
+        margin-left: 146px;
+    }
+    .google-area{
+        margin-left: 85px;
+    }
+}

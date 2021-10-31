@@ -4,18 +4,17 @@ const ManageAllOrders = () => {
     const [manageOrders, setMangeOrders] = useState([]);
     const [status, setStatus] = useState(true);
     useEffect(()=>{
-        fetch('http://localhost:5000/manageAllOrders')
+        fetch('https://howling-scarecrow-84354.herokuapp.com/manageAllOrders')
         .then(res => res.json())
         .then(result => {
             setMangeOrders(result)
             setStatus(true)
-            console.log(result);
         })
     },[status])
     const handleOrderDelete = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/deleteOrder/${id}`
+            const url = `https://howling-scarecrow-84354.herokuapp.com/deleteOrder/${id}`
             fetch(url, {
                 method: "DELETE"
             })
@@ -31,11 +30,14 @@ const ManageAllOrders = () => {
     }
 
     const handleUpdate = (id, index) =>{
-        fetch(`http://localhost:5000/updateOrder/${id}`, {
+        fetch(`https://howling-scarecrow-84354.herokuapp.com/updateOrder/${id}`, {
             method: "PUT"
         })
         .then(res => res.json())
-        .then(result => console.log(result))
+        .then(result => {
+            alert('Successfully updated...!!!')
+            setStatus(false)
+        })
     }
     
     return (
@@ -47,7 +49,7 @@ const ManageAllOrders = () => {
                         manageOrders.map((orders, index) => (
                             <div class="row g-0 m-3 border border-primary p-3 rounded">
                                 <div class="col-md-4">
-                                    <img src={orders?.product.image} class="img-fluid rounded-start" alt="..." />
+                                    <img src={orders?.product?.img} class="img-fluid rounded-start" alt="..." />
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">

@@ -1,0 +1,35 @@
+.notFound img{
+    width: 100%;
+  }
+  .button1{
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: rgb(209, 60, 60);
+    color: white;
+    margin-bottom: 150px;
+    margin-left: 620px;
+  }
+  .button1:hover{
+    background-color: rgb(0, 83, 104);
+    transition: 1s;
+  }
+  .button2{
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: rgb(0, 54, 75);
+    color: white;
+    margin-bottom: 100px;
+    
+  }
+  .button2:hover{
+    background-color: rgb(209, 60, 60);
+    transition: 1s;
+  }
+
+  @media only screen and (max-width: 668px){
+    .button1{
+        margin-left: 60px;
+    }
+  }

@@ -29,10 +29,6 @@ const Header = () => {
                     fontWeight: "bold",
                      color: "#f7b614"
                      }} as={NavLink} to="/home">Home</Nav.Link>
-                    <Nav.Link activeStyle={{
-                    fontWeight: "bold",
-                     color: "#f7b614"
-                     }} as={NavLink} to="/services#services">Service</Nav.Link>
                     {user.email?<Nav.Link activeStyle={{
                     fontWeight: "bold",
                      color: "#f7b614"
@@ -48,7 +44,7 @@ const Header = () => {
                     <Nav.Link activeStyle={{
                     fontWeight: "bold",
                      color: "#f7b614"
-                     }} as={HashLink} to="/contact#contact">Contact</Nav.Link>
+                     }} as={HashLink} to="/contact#contact">Contact Us</Nav.Link>
                 </Nav>
                 { !displayName ?
                 (<Nav className="ms-auto">
@@ -58,7 +54,7 @@ const Header = () => {
                  :
                  <NavDropdown title={ <img className="drop-img" src={photoURL} alt="" />} id="basic-nav-dropdown">
                      <div>
-                         <h6>{displayName}</h6>
+                         <h6 className="text-center">{displayName}</h6>
                             <p>{email}</p>
                             <Button onClick={logOut} type="submit">Sign Out</Button>
                         </div>

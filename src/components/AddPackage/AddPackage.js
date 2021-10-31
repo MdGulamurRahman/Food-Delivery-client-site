@@ -1,10 +1,12 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import './AddPackage.css'
+import byCycle from '../../images/by.png'
+import Fade from 'react-reveal/Fade';
 const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data =>{
-        fetch('http://localhost:5000/addSinglePackage', {
+        fetch('https://howling-scarecrow-84354.herokuapp.com/addSinglePackage', {
             method: 'POST',
             headers: {'content-type':'application/json'},
             body: JSON.stringify(data)
@@ -18,14 +20,28 @@ const AddPackage = () => {
         })
         console.log(data)};
     return (
-        <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-            <input {...register("name", )} placeholder="name" /> <br />
-            <input type="number"{...register("price")} placeholder="price"/> <br />
-            <input type="text" {...register("image")} placeholder="image" /> <br />
-            <input type="text" {...register("description")} placeholder="description" /> <br />
-            <input type="submit" />
-            </form>
+        <div className="container">
+            <h1 className="py-5 text-center text-light">ADD A NEW <span className="all-clr">FOOD PACKAGE</span></h1>
+            <div className="row d-flex align-items-center justify-content-center">
+                <div className="pt-3 col-sm-12 col-md-6 col-lg-6">
+                <Fade left>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                <input className="input-field" {...register("name", )} placeholder="name" required/> <br />
+                <input className="my-2 input-field" {...register("email", )} placeholder="email" required/> <br />
+                <input className=" input-field" {...register("address", )} placeholder="address" required/> <br />
+                <input className="my-2 input-field" type="number"{...register("number")} placeholder="phone" required/> <br />
+                <input className="input-field" type="text" {...register("image")} placeholder="photoURL" required/> <br />
+                <input className="my-2 input-field" type="text" {...register("description")} placeholder="description" required/> <br />
+                <input className="input-btn" type="submit" />
+                </form>
+                </Fade>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-6">
+                <Fade right>
+                    <img className="img-fluid" src={byCycle} alt="" />
+                </Fade>
+                </div>
+            </div>
         </div>
     );
 };

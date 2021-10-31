@@ -1,0 +1,41 @@
+.sign-up{
+    background-image: url('../../images/register.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;}
+.sign-card{
+    background-color: rgba(239, 255, 13, 0.452);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sign-container{
+    padding: 50px;
+}
+.sign-btn{
+    margin-left: 480px;
+    background-color: #00294b;
+    padding: 8px ;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.sign-btn:hover{
+    background-color: rgb(0, 1, 2);
+    color: #fff;
+}
+@media only screen and (max-width: 668px){
+    .sign-btn{
+        padding: 5px 60px;
+        margin-left: 110px;
+    }
+    
+}
+@media only screen and (min-width: 669px) and (max-width: 1025px){
+    .sign-up{
+        background-position: center;
+    }
+    .sign-btn{
+        padding: 6px 126px;
+        margin-left: 156px;
+    }
+}

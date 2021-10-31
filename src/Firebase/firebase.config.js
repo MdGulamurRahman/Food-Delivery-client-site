@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDUeZLKaWX5aZVgW3leqf1ZFH0Bo9YYPaU",
-    authDomain: "food-delivery-10646.firebaseapp.com",
-    projectId: "food-delivery-10646",
-    storageBucket: "food-delivery-10646.appspot.com",
-    messagingSenderId: "861795242049",
-    appId: "1:861795242049:web:1fea1eea0166e10d54b6c0"
-  };
+  apiKey: "AIzaSyApiBxGHWhA6VRjcXcCfiArZ-Z7mCxyDsk",
+  authDomain: "delevery-man.firebaseapp.com",
+  projectId: "delevery-man",
+  storageBucket: "delevery-man.appspot.com",
+  messagingSenderId: "104501576221",
+  appId: "1:104501576221:web:84833cd7400473947afcf4"
+};
 
   export default firebaseConfig

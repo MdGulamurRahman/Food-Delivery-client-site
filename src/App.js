@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import AuthProvider from './Context/AuthProvider';
@@ -10,6 +9,9 @@ import MyOrders from './components/MyOrders/MyOrders';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AddPackage from './components/AddPackage/AddPackage';
 import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
+import Register from './components/Register/Register';
+import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
             <Route path="/login">
             <Login></Login>
             </Route>
+            <Route path="/register">
+            <Register></Register>
+          </Route>
             <PrivateRoute path="/details/:productId">
             <Details></Details>
             </PrivateRoute>
@@ -39,7 +44,11 @@ function App() {
             <PrivateRoute path="/package">
               <AddPackage></AddPackage>
             </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>

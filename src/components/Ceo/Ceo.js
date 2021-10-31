@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Ceo.css'
 import { Card, CardGroup, Row} from 'react-bootstrap';
+import Zoom from 'react-reveal/Zoom';
 const CEO = () => {
     const [ceo, setCeo] = useState([]);
     useEffect(()=>{
@@ -15,6 +16,7 @@ const CEO = () => {
             <Row xs={1} md={3} className="g-4">
                 {
                     ceo.map(pd => 
+                        <Zoom>
                     <CardGroup>
                         <Card>
                         <Card.Img className=" rounded-circle c-img" variant="top" src={pd.img} />
@@ -28,7 +30,9 @@ const CEO = () => {
                         </div>
                         </Card.Body>
                     </Card>
-                    </CardGroup>)
+                    </CardGroup>
+                    </Zoom>
+                    )
                 }
             </Row>
             </div>
