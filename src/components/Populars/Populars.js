@@ -15,7 +15,7 @@ const Populars = () => {
     return ( 
         <div className="pt-5 overflow-hidden">
             <h1 className="py-5 text-center text-light fw-bold"style={{fontSize: "50px"}}>POPULAR <span className="all-clr">FAST FOODS</span></h1>
-            <div className="container pt-2">
+            <div className="container pt-2 overflow-hidden">
             <Row xs={1} md={3} className="g-4">
                 {
                     products.map(pd => 
@@ -24,14 +24,14 @@ const Populars = () => {
                 <Card className="work-card">
                     <Card.Img className="p-img" src={pd.img} />
                     <Card.Body>
-                    <Card.Title className="text-success fw-bold ps-4"><h4>{pd.name}</h4></Card.Title>
-                    <Card.Title className="ps-4">Price: ${pd?.price}</Card.Title>
-                    <Card.Text >
+                    <Card.Title className="text-center text-success fw-bold ps-4"><h4>{pd.name}</h4></Card.Title>
+                    <Card.Title className="text-center ps-4">Price: ${pd?.price}</Card.Title>
+                    <Card.Text className="text-center">
                     {pd.details?.slice(0,120)}
                     </Card.Text>
                     </Card.Body>
                     <Card.Text>
-                    <Button className="mb-5 btn btn-danger ms-2">Add To Cart</Button>
+                    <Button className="mb-5 btn btn-danger ms-5">Add To Cart</Button>
                     <Link to={`/details/${pd._id}`}><Button className="mb-5 btn btn-dark d-btn">Details</Button></Link>
                     </Card.Text>
                 </Card>

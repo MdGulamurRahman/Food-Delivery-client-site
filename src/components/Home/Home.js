@@ -17,7 +17,7 @@ const Home = () => {
                 <Pulse>
                    <h1 className="express">Express</h1>
                     <h1 className="delivery-text">Home Delivery</h1>
-                    <p className="px-2 py-4 pb-4 text-light">Curabitur imperdiet varius lacus, id placerat purus vulputate non. Fusce in felis vel arcu maximus placerat eu ut arcu. Ut nunc ex, gravida vel porttitor et, pretium ac sapien.</p>
+                    <p className="px-2 py-4 pb-4 text-light">Search Food Extrusion Machine, Top Results From Trusted Resources. Search Food Extrusion Machine, Get Expert Advice and Curated Content on Searchley. Explore the Best Info Now.</p>
                 </Pulse>
                     <button className="read-btn">Read more</button>
                 </div>

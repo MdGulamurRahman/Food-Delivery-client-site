@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import logo from '../../images/logo_1x.png'
+import logo from '../../images/e4.png'
 import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { Container, Nav, Navbar, NavDropdown,Button} from 'react-bootstrap';
@@ -16,7 +16,7 @@ const Header = () => {
                 <Navbar.Brand to="/home">
                 <img
                     src={logo}
-                    width="200px"
+                    width="180px"
                     height=""
                     className="align-top d-inline-block"
                     alt="React Bootstrap logo"
