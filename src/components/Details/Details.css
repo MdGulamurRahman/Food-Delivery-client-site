@@ -22,6 +22,7 @@
 }
 .bg-input{
     background-color: #010103;
+    color: white;
     border: 0;
     padding-bottom: 6px;
 }
@@ -30,7 +31,7 @@
     margin-left: 90px;
 }
 
-
+/* resposive for mobile device */
 @media only screen and (max-width: 688px){
     .map-area{
        overflow-x: hidden;

@@ -2,13 +2,13 @@
     box-shadow: 3px 3px 20px rgb(0, 1, 2);
 }
 .work-card{
-    border: 0px;
-    height: 600px;
+    border: 1px solid tomato;
+    /* height: 600px; */
 }
-.p-img{
+/* .p-img{
     height: 300px;
     width: 400px;
-}
+} */
 .d-btn{
     margin-left: 100px;
 }

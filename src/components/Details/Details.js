@@ -34,8 +34,10 @@ const Details = () => {
        data.product = product;
        data.email = user?.email;
        data.product_name = product?.name;
-       data.product_image = product?.image;
-       data.product_shortdescribe = product?.shortdescribe;
+       data.product_img = product?.img;
+       data.product_details = product?.details;
+       data.product_price = product?.price;
+       data.product_number = product?.number
        data.status = "pending"
        console.log(data)
     fetch("https://howling-scarecrow-84354.herokuapp.com/addService", {
@@ -98,14 +100,14 @@ const Details = () => {
                             <label for="name" className="col-sm-2 col-form-label"></label>
                             <div className="input-icon col-sm-10 d-flex align-items-center">
                                 <h3 className="all-clr me-2"><FontAwesomeIcon icon={faUserTie} /></h3>
-                                <input onBlur={nameHandler} type="name" className="form-control bg-input" id="name" placeholder="name" required/>
+                                <input defaultValue={user.displayName} onBlur={nameHandler} type="name" className="form-control bg-input" id="name" placeholder="name" required/>
                             </div>
                             </div>
                             <div className="mb-3 row">
                             <label for="inputEmail3" className="col-sm-2 col-form-label"></label>
                             <div className="input-icon col-sm-10 d-flex align-items-center">
                             <h3 className="all-clr me-2"><FontAwesomeIcon icon={faEnvelope} /></h3>
-                                <input  onBlur={emailHandler} type="email" className="form-control bg-input" id="inputEmail3" placeholder="email" required/>
+                                <input defaultValue={user.email} onBlur={emailHandler} type="email" className="form-control bg-input" id="inputEmail3" placeholder="email" required/>
                             </div>
                             </div>
                             <div className="mb-3 row">

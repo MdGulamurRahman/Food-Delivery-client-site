@@ -15,7 +15,7 @@ const Populars = () => {
     return ( 
         <div className="pt-5 overflow-hidden">
             <h1 className="py-5 text-center text-light fw-bold"style={{fontSize: "50px"}}>POPULAR <span className="all-clr">FAST FOODS</span></h1>
-            <div className="container pt-2 overflow-hidden">
+            <div className="container pt-2 ">
             <Row xs={1} md={3} className="g-4">
                 {
                     products.map(pd => 
@@ -31,8 +31,8 @@ const Populars = () => {
                     </Card.Text>
                     </Card.Body>
                     <Card.Text>
-                    <Button className="mb-5 btn btn-danger ms-5">Add To Cart</Button>
-                    <Link to={`/details/${pd._id}`}><Button className="mb-5 btn btn-dark d-btn">Details</Button></Link>
+                    <Button className="mb-2 btn btn-danger ms-3">Add To Cart</Button>
+                    <Link to={`/details/${pd._id}`}><Button className=" me-3 mb-2 btn btn-dark d-btn">Details</Button></Link>
                     </Card.Text>
                 </Card>
             </CardGroup>

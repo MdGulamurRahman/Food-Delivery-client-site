@@ -20,7 +20,7 @@ const AddPackage = () => {
         })
         console.log(data)};
     return (
-        <div className="container">
+        <div className="container overflow-hidden">
             <h1 className="py-5 text-center text-light">ADD A NEW <span className="all-clr">FOOD PACKAGE</span></h1>
             <div className="row d-flex align-items-center justify-content-center">
                 <div className="pt-3 col-sm-12 col-md-6 col-lg-6">
@@ -30,15 +30,15 @@ const AddPackage = () => {
                 <input className="my-2 input-field" {...register("email", )} placeholder="email" required/> <br />
                 <input className=" input-field" {...register("address", )} placeholder="address" required/> <br />
                 <input className="my-2 input-field" type="number"{...register("number")} placeholder="phone" required/> <br />
-                <input className="input-field" type="text" {...register("image")} placeholder="photoURL" required/> <br />
-                <input className="my-2 input-field" type="text" {...register("description")} placeholder="description" required/> <br />
+                <input className="input-field" type="text" {...register("img")} placeholder="photoURL" required/> <br />
+                <input className="my-2 input-field" type="text" {...register("details")} placeholder="description" required/> <br />
                 <input className="input-btn" type="submit" />
                 </form>
                 </Fade>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6">
                 <Fade right>
-                    <img className="img-fluid" src={byCycle} alt="" />
+                    <img className="img-fluid cycle-img" src={byCycle} alt="" />
                 </Fade>
                 </div>
             </div>
